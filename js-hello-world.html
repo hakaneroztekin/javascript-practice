@@ -3,8 +3,8 @@
     <head>
         <title>Hello Js! :)</title>
         <script>
-            function sayHello() {
-                document.write("Hello there!");
+            function sayHello(who) {
+                document.write("Hello there, " + who);
             }  
         </script>
     </head>
@@ -12,21 +12,25 @@
     <body>
         <script>
             var helloMessage = "Hello world!"; 
-            document.writeln(helloMessage);
+            document.write(helloMessage);
+            document.write("<br>");
             
             var isJsCool = true;
             document.write("is Js Cool? " + isJsCool);
+            document.write("<br>");
             
             var lengthOfMessage = helloMessage.length;
             document.write(lengthOfMessage);
+            document.write("<br>");
             
             var myArray = new Array(5);
             myArray[0] = "cat";
             myArray[1] = 20;
             myArray[3] = true;
             document.write(myArray);
+            document.write("<br>");
             
-            sayHello();
+            sayHello("the user!");
             
         </script>
     </body>
