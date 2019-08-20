@@ -3,6 +3,8 @@
     <head>
         <title>Hello Js! :)</title>
         <script>
+            // defining a function with a parameter
+            // we can move this to the body but to be more tidy we've moved it here
             function sayHello(who) {
                 document.write("Hello there, " + who);
             }  
@@ -11,18 +13,22 @@
     
     <body>
         <script>
+            // Hello world!
             var helloMessage = "Hello world!"; 
             document.write(helloMessage);
             document.write("<br>");
             
+            // boolean variables
             var isJsCool = true;
             document.write("is Js Cool? " + isJsCool);
             document.write("<br>");
             
+            // accessing object fields
             var lengthOfMessage = helloMessage.length;
             document.write(lengthOfMessage);
             document.write("<br>");
             
+            // arrays
             var myArray = new Array(5);
             myArray[0] = "cat";
             myArray[1] = 20;
@@ -30,6 +36,7 @@
             document.write(myArray);
             document.write("<br>");
             
+            // function call
             sayHello("the user!");
             
         </script>
