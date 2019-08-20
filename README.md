@@ -1,0 +1,1 @@
+A simple initial to the JavaScript world.
