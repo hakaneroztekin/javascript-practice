@@ -8,6 +8,16 @@
             function sayHello(who) {
                 document.write("Hello there, " + who);
             }  
+            
+            function isYearBeforeOrAfter2019(year) {
+                var result;
+                if(year > 2019)
+                    result = year + " is after 2019";
+                else {
+                    result = year + " is before 2019"; 
+                }
+                document.write(result);
+            }
         </script>
     </head>
     
@@ -38,6 +48,13 @@
             
             // function call
             sayHello("the user!");
+            document.write("<br>");
+
+            // conditionals
+            isYearBeforeOrAfter2019(2010);
+            document.write("<br>");
+            isYearBeforeOrAfter2019(2022);
+            document.write("<br>");
             
         </script>
     </body>
