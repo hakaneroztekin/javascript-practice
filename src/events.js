@@ -2,7 +2,7 @@ let clickCounter = 1;
 
 function changeText(id) {
     document.getElementById(id).innerText = printText();
-    clickCounter++;
+    let number = clickCounter++;
 }
 
 function printText() {
@@ -16,6 +16,7 @@ function printText() {
         case 4:
             clickCounter = 0;
             return "Start again?";
+        default:
+            return "Hello there!";
     }
-
 }
