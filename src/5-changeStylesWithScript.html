@@ -5,14 +5,15 @@
     <title>Let's Play With Style</title>
 
     <script>
+        let elasticStyle = document.getElementById('elasticLine').style;
         function makeFontBig() {
-            document.getElementById('elasticLine').style.fontSize = '35px'
+            elasticStyle.fontSize = '35px'
         }
         function makeFontVerySmall() {
-            document.getElementById('elasticLine').style.fontSize = '2px'
+            elasticStyle.fontSize = '2px'
         }
         function makeItDisappear() {
-            document.getElementById('elasticLine').style.display = 'none'
+            elasticStyle.display = 'none'
         }
     </script>
 </head>
