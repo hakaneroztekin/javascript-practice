@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Play With Style</title>
+
+    <script>
+        function makeFontBig() {
+            document.getElementById('elasticLine').style.fontSize = '35px'
+        }
+    </script>
+</head>
+<body>
+<p>
+    Can you read the line below?
+    Let's find out what to do.
+</p>
+
+<button onclick="makeFontBig()">Do some hocus pocus</button>
+<button onclick="document.getElementById('elasticLine').style.fontSize = '2px'">Revert changes</button>
+<button onclick="document.getElementById('elasticLine').style.display = 'none'">Make it disappear forever!</button>
+
+<p id="elasticLine" style="font-size: 2px">Hello there!</p>
+</body>
+</html>
