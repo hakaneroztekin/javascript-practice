@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equal Value & Equal Type</title>
+</head>
+<body>
+<p>JavaScript has == and === operators. As we don't have variable types in Js as opposed to Java, we need to check type equality too.</p>
+<p>That's why we have a similar operator in Js.</p>
+<table style="text-align: left; background-color: burlywood; display: inline-flex;">
+    <tr>
+    <th>Operator</th>
+    <th>Explanation</th>
+    </tr>
+    <tr>
+    <th>==</th>
+    <th>equal to</th>
+    </tr>
+    <tr>
+        <th>===</th>
+        <th>equal value and equal type</th>
+    </tr>
+    <tr>
+        <th>!=</th>
+        <th>not equal</th>
+    </tr>
+    <tr>
+        <th>!==</th>
+        <th>not equal value or not equal type</th>
+    </tr>
+</table>
+
+<p>Let's experiment with it.</p>
+<p>Click the buttons to see the results</p>
+
+<p>
+<button onclick="doubleEquality(5, 5)">5 == 5</button>
+<button onclick="tripleEquality(5, 5)">5 === 5</button>
+<button onclick="oneInEquality(5, 5)">5 != 5</button>
+<button onclick="doubleInEquality(5, 5)">5 !== 5</button>
+</p>
+
+<p>
+    <button onclick="doubleEquality(5, '5')">5 == '5'</button>
+    <button onclick="tripleEquality(5, '5')" style="border-radius: 5px; border-color: aqua">5 === '5'</button>
+    <button onclick="oneInEquality(5, '5')">5 != '5'</button>
+    <button onclick="doubleInEquality(5, '5')" style="border-radius: 5px; border-color: aqua">5 !== '5'</button>
+</p>
+
+<p>
+<button onclick="doubleEquality(5, 10)">5 == 10</button>
+<button onclick="tripleEquality(5, 10)">5 === 10</button>
+<button onclick="oneInEquality(5, 10)">5 != 10</button>
+<button onclick="doubleInEquality(5, 10)">5 !== 10</button>
+</p>
+
+<p>
+<button onclick="doubleEquality(5, '10')">5 == '10'</button>
+<button onclick="tripleEquality(5, '10')">5 === '10'</button>
+<button onclick="oneInEquality(5, '10')">5 != '10'</button>
+<button onclick="doubleInEquality(5, '10')">5 !== '10'</button>
+</p>
+
+<p id="variables"></p>
+<p id="result"></p>
+
+<script src="equalityComparison.js"></script>
+</body>
+</html>

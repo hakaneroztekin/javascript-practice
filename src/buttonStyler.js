@@ -1,3 +1,4 @@
+let person = "John Doe", carName = "Volvo", price = 200;
 let elasticStyle = document.getElementById('elasticLine').style;
 function makeFontBig() {
     elasticStyle.fontSize = '35px'
