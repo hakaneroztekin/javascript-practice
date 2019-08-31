@@ -8,6 +8,12 @@
         function makeFontBig() {
             document.getElementById('elasticLine').style.fontSize = '35px'
         }
+        function makeFontVerySmall() {
+            document.getElementById('elasticLine').style.fontSize = '2px'
+        }
+        function makeItDisappear() {
+            document.getElementById('elasticLine').style.display = 'none'
+        }
     </script>
 </head>
 <body>
@@ -17,8 +23,8 @@
 </p>
 
 <button onclick="makeFontBig()">Do some hocus pocus</button>
-<button onclick="document.getElementById('elasticLine').style.fontSize = '2px'">Revert changes</button>
-<button onclick="document.getElementById('elasticLine').style.display = 'none'">Make it disappear forever!</button>
+<button onclick="makeFontVerySmall()">Revert changes</button>
+<button onclick="makeItDisappear()">Make it disappear forever!</button>
 
 <p id="elasticLine" style="font-size: 2px">Hello there!</p>
 </body>
